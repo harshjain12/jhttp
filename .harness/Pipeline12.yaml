@@ -32,7 +32,9 @@ pipeline:
                   name: Run_2
                   identifier: Run_2
                   spec:
+                    connectorRef: account.CItestDockerConnectorAA4qRASwHN
+                    image: alpine
                     shell: Sh
-                    command: sleep 10000
+                    command: echo $HOME
                   when:
                     stageStatus: All
