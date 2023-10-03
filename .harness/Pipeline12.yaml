@@ -45,3 +45,5 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo $HOME
+                  strategy:
+                    parallelism: 5
