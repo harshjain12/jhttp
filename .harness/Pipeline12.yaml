@@ -38,3 +38,10 @@ pipeline:
                     command: echo $HOME
                   when:
                     stageStatus: All
+              - step:
+                  type: Run
+                  name: Run_3
+                  identifier: Run_3
+                  spec:
+                    shell: Sh
+                    command: echo $HOME
